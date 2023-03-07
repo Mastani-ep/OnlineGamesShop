@@ -1,0 +1,159 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.topnav a {
+  border-bottom: 3px solid transparent;
+}
+
+.topnav a:hover {
+  border-bottom: 3px solid rgba(18, 192, 2, 0.82);
+}
+
+.topnav a.active {
+  border-bottom: 3px solid rgba(18, 192, 2, 0.82);
+}
+
+.product-nav {
+  background-color: rgba(18, 192, 2, 0.82);
+  position: fixed;
+  z-index: 999;
+}
+
+.sidebar {
+  min-width: 150px;
+  max-width: 150px;
+  height: 100%;
+  position: fixed;
+  z-index: 999;
+  background: rgba(18, 192, 2, 0.82);
+  color: #fff;
+  margin-left: -250px;
+  transition: all 0.5s;
+}
+
+.show-sidebar-icon{
+  position: fixed;
+  z-index: 999;
+  color: white;
+  background-color: rgba(18, 192, 2, 0.9);
+  padding: 1% 2%;
+  margin-top: 1%;
+  border-radius: 25% ;
+}
+
+.show-sidebar-icon:hover{
+  position: fixed;
+  padding: 1% 2%;
+  z-index: 999;
+  color:  rgba(18, 192, 2, 0.9);
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+
+.close-sidebar-icon{
+  margin-top: 10%;
+  color: rgba(255, 255, 255, 0.99);
+}
+
+.close-sidebar-icon:hover{
+  margin-top: 10%;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.sidebar a{
+  color:white;
+}
+
+.sidebar.is-open {
+  margin-left: 0;
+  transition: 0.5s;
+}
+
+.navmenu{
+  display: flex;
+  justify-content: center;
+}
+
+.navmenu a{
+  color: white;
+  border-bottom: 3px solid transparent;
+}
+
+.navmenu a:hover{
+  color: white;
+  border-bottom: 3px solid white;
+}
+
+.customtoggler{
+  background-color: azure;
+  color: beige ;
+}
+
+.register-form-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+.register-form-container Form{
+  width: 20%;
+}
+
+.form-input{
+  margin-top: 10%;
+}
+
+.register-btn{
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+.btn-register{
+  background-color: rgba(18, 192, 2, 0.9) !important;
+  border-color: rgba(18, 192, 2, 0.9) !important;
+}
+
+.btn-register:hover{
+  background-color: rgba(18, 192, 2, 0.7) !important;
+  border-color: rgba(18, 192, 2, 0.7) !important;
+}

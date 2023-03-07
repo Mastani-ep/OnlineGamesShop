@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @SpringBootApplication
+
 public class OnlineShopApplication {
 
     public static void main(String[] args) {
@@ -27,6 +28,11 @@ public class OnlineShopApplication {
             return currentUserName;
         }
         return "";
+    }
+
+    @GetMapping("/login")
+    public String hello() {
+        return "AAAA";
     }
 
 }

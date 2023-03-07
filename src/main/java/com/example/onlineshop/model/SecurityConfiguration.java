@@ -65,12 +65,7 @@ public class SecurityConfiguration {
                     .logoutUrl("/logout")
                     .invalidateHttpSession(true)
                     .deleteCookies("JSESSIONID")
-                    .logoutSuccessUrl(LOGIN_URL + "?logout"))
-                .sessionManagement(session -> session
-                    .sessionCreationPolicy(SessionCreationPolicy.ALWAYS)
-                    .invalidSessionUrl("/invalidSession.htm")
-                    .maximumSessions(1)
-                    .maxSessionsPreventsLogin(true));
+                    .logoutSuccessUrl(LOGIN_URL + "?logout"));
         return http.build();
     }
     

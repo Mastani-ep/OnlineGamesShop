@@ -30,9 +30,5 @@ public class OnlineShopApplication {
         return "";
     }
 
-    @GetMapping("/login")
-    public String hello() {
-        return "AAAA";
-    }
 
 }

@@ -1,5 +1,7 @@
-package com.example.onlineshop.model;
+package com.example.onlineshop.service;
 
+import com.example.onlineshop.model.User;
+import com.example.onlineshop.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -8,7 +10,7 @@ import org.springframework.stereotype.Service;
 
 
 @Service
-public class UserServiceImpl implements UserService{
+public class UserServiceImpl implements UserService {
     @Bean
     public static PasswordEncoder encoder() {
         return new BCryptPasswordEncoder();

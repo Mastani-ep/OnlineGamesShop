@@ -1,4 +1,4 @@
-package com.example.onlineshop.model;
+package com.example.onlineshop.service;
 
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;

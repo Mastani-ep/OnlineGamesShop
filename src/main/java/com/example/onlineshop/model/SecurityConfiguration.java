@@ -1,5 +1,6 @@
 package com.example.onlineshop.model;
 
+import com.example.onlineshop.service.CustomUserDetailService;
 import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

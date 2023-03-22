@@ -1,6 +1,6 @@
 package com.example.onlineshop.controllers;
 import com.example.onlineshop.model.Product;
-import com.example.onlineshop.model.ProductRepository;
+import com.example.onlineshop.repository.ProductRepository;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

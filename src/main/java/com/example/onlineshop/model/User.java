@@ -7,6 +7,7 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 
+
 @Table(name = "Users", uniqueConstraints = {@UniqueConstraint(columnNames = "email")})
 @Entity
 public class User {

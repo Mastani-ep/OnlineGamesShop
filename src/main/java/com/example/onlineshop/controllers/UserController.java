@@ -1,6 +1,6 @@
 package com.example.onlineshop.controllers;
 import com.example.onlineshop.model.User;
-import com.example.onlineshop.model.UserService;
+import com.example.onlineshop.service.UserService;
 import jakarta.annotation.Resource;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
